@@ -1,0 +1,22 @@
+@startuml
+
+Class Usuario{
+    # nome: String 
+    - data_nascimento: data 
+    - email: String
+    
+}
+
+Class Aluno {
+    # peso: double
+    # altura: double
+}
+
+Class Personal{
+    - cref: String 
+}
+Usuario <|-- Aluno
+Usuario <|-- Personal
+
+
+@enduml
